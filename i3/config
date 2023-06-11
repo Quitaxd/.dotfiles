@@ -50,22 +50,8 @@ bindsym $mod+Shift+8 move container to workspace 8; workspace 8
 bindsym $mod+Shift+9 move container to workspace 9; workspace 9
 bindsym $mod+Shift+0 move container to workspace 10; workspace 10
 
-bindsym control+mod1+X mode "$mode_system"
-
-set $mode_system System (k) lock, (a) switch (l) logout, (u) suspend, (h) hibernate, (r) reboot, (s) shutdown
-mode "$mode_system" {
-    bindsym k exec --no-startup-id ~/.config/i3/scripts/i3exit.sh lock, mode "default"
-    bindsym a exec --no-startup-id ~/.config/i3/scripts/i3exit.sh switch, mode "default"
-    bindsym l exec --no-startup-id ~/.config/i3/scripts/i3exit.sh logout, mode "default"
-    bindsym u exec --no-startup-id ~/.config/i3/scripts/i3exit.sh suspend, mode "default"
-    bindsym h exec --no-startup-id ~/.config/i3/scripts/i3exit.sh hibernate, mode "default"
-    bindsym r exec --no-startup-id ~/.config/i3/scripts/i3exit.sh reboot, mode "default"
-    bindsym s exec --no-startup-id ~/.config/i3/scripts/i3exit.sh shutdown, mode "default"
-
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-
+# Logout Screen
+bindsym $mod+x exec archlinux-logout
 
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+c reload
@@ -197,8 +183,8 @@ exec_always --no-startup-id autotiling
 exec_always --no-startup-id mpris-proxy
 
 # Authentication dialog
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1 &
+exec --no-startup-id /usr/libexec/polkit-kde-authentication-agent-1 &
 
 # Network
 exec --no-startup-id nm-applet
@@ -366,4 +352,4 @@ bindsym --whole-window $mod+Shift+button1 move left
 bindsym --whole-window $mod+Shift+button3 move right
 
 # Syncthing autostart
-exec syncthing
+exec syncthing --no-browser
