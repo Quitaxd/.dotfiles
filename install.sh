@@ -1,5 +1,7 @@
 cd ~/.dotfiles
+rm -rf ~/.config-backup
 mkdir ~/.config-backup
+mv ~/Wallpapers ~/.Wallpapers-Backup
 mkdir ~/Wallpapers
 cp wp.jpg ~/Wallpapers/wp.jpg
 mv ~/.config/hypr/ ~/.config-backup
