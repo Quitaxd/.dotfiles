@@ -1,5 +1,7 @@
 cd ~/.dotfiles
 mkdir ~/.config-backup
+mkdir ~/Wallpapers
+cp wp.jpg ~/Wallpapers/wp.jpg
 mv ~/.config/hypr/ ~/.config-backup
 mv ~/.config/alacritty/ ~/.config-backup
 mv ~/.config/i3/ ~/.config-backup
