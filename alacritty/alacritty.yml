@@ -6,7 +6,7 @@ window:
 
   decorations: none
 
-  opacity: 1.0
+  opacity: 0.5
   dynamic_title: true
 
   history: 10000
