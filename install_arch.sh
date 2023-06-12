@@ -23,6 +23,6 @@ rm -rf paru/
 cd ~/.dotfiles
 
 # Hyprland Apps
-paru -S hyprland-nvidia-git waybar-hyprland-git hyprpaper alacritty zsh wofi rofi rofi-emoji wlogout xfce4-terminal xdg-desktop-portal-hyprland xdg-desktop-portal pipewire wireplumber polkit-kde-agent qt5-wayland qt6-wayland mako hyprpaper foot thunar wlogout grimblast ksysguard hyprpicker --noconfirm
+paru -S hyprland-nvidia-git waybar-hyprland-git hyprpaper alacritty zsh wofi rofi rofi-emoji wlogout xfce4-terminal xdg-desktop-portal-hyprland xdg-desktop-portal pipewire wireplumber polkit-kde-agent qt5-wayland qt6-wayland mako hyprpaper foot thunar wlogout grimblast ksysguard hyprpicker nitch --noconfirm
 
 cd ~/.dotfiles
