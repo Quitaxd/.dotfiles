@@ -33,3 +33,5 @@ git clone https://github.com/hyprwm/hyprpicker
 cd hyprpicker
 make all
 sudo cp build/hyprpicker /usr/bin/hyprpicker
+
+wget https://raw.githubusercontent.com/unxsh/nitch/main/setup.sh && sh setup.sh
