@@ -16,7 +16,7 @@ cp -r * ~/.config
 # Paru installation
 sudo pacman -S --needed git base-devel --noconfirm
 git clone https://aur.archlinux.org/paru.git ~/paru
-cd paru/
+cd ~/paru/
 makepkg -si
 cd
 rm -rf paru/
