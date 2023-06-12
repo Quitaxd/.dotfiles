@@ -6,8 +6,6 @@ mkdir ~/Wallpapers
 cp wp.jpg ~/Wallpapers/wp.jpg
 mv ~/.config/hypr/ ~/.config-backup
 mv ~/.config/alacritty/ ~/.config-backup
-mv ~/.config/i3/ ~/.config-backup
-mv ~/.config/polybar/ ~/.config-backup
 mv ~/.config/waybar/ ~/.config-backup
 mv ~/.config/wofi/ ~/.config-backup
 mv ~/.config/picom.conf ~/.config-backup
