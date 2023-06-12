@@ -20,5 +20,6 @@ meson _build
 ninja -C _build
 sudo ninja -C _build install
 sudo cp /usr/local/share/wayland-sessions/hyprland.desktop /usr/share/wayland-sessions/
+wget https://raw.githubusercontent.com/unxsh/nitch/main/setup.sh && sh setup.sh
 
 echo "Check /etc/gdm/custom.conf and make sure Wayland is enabled."
