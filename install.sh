@@ -10,8 +10,9 @@ mv ~/.config/waybar/ ~/.config-backup
 mv ~/.config/wofi/ ~/.config-backup
 mv ~/.config/picom.conf ~/.config-backup
 cp -r * ~/.config
+chmod +x ~/.config/waybar/waybar.sh
+rm ~/.config/README.md
 rm ~/.config/install.sh
-
 
 
 # Hyprland Apps
